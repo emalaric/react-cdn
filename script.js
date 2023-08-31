@@ -3,16 +3,15 @@ const rootNode = document.getElementById("root");
 const root = ReactDOM.createRoot(rootNode)
 
 function App() {
-    // return React.createElement("h1", null, "Hello React")
-    return React.createElement("div", null, 
-        React.createElement("h1", null, "Hello React"),
-        React.createElement("p", null, "Ovo je paragraf"),
-        React.createElement("ul", null, 
-            React.createElement("li", null, "Subtitle 1"),
-            React.createElement("li", null, "Subtitle 2"),
-            React.createElement("li", null, "Subtitle 3"),
-        )
-    )
+    return (
+    <>
+        <h1>Pozdrav Algebra iz JSX-a</h1>
+        <Paragraf />
+    </>)
+}
+
+function Paragraf() {
+    return (<><p>Neki odlomak</p></>)
 }
 
 // const virtualDOM = React.createElement("h1", null, "Hello React")
